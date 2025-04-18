@@ -56,6 +56,7 @@ body {
         border: $backgroundColor2 1px solid;
         border-radius: 8px;
         font-size: 1.25rem;
+        caret-color: $color1;
 
         &::-webkit-outer-spin-button,
         &::-webkit-inner-spin-button {
@@ -65,7 +66,6 @@ body {
         &:focus,
         &:hover {
           border-color: $color1;
-          caret-color: $color1;
         }
       }
 
@@ -89,7 +89,7 @@ body {
 
       position: absolute;
       top: calc(100% - 32px);
-      left: calc(50% - 32px);
+      right: calc(50% - 32px);
 
       display: flex;
       justify-content: center;
@@ -112,6 +112,7 @@ body {
 
         input {
           border-color: $color2;
+          caret-color: $color2;
         }
       }
     }
@@ -132,3 +133,5 @@ body {
     }
   }
 }
+
+@import "responsive-elements";

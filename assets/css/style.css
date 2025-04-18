@@ -46,12 +46,12 @@ body {
         padding: 15px;
         border: #dbdbdb 1px solid;
         border-radius: 8px;
-        font-size: 1.25rem; }
+        font-size: 1.25rem;
+        caret-color: #854cfe; }
         body section#input_section div input::-webkit-outer-spin-button, body section#input_section div input::-webkit-inner-spin-button {
           -webkit-appearance: none; }
         body section#input_section div input:focus, body section#input_section div input:hover {
-          border-color: #854cfe;
-          caret-color: #854cfe; }
+          border-color: #854cfe; }
       body section#input_section div span.error {
         width: 87px;
         height: 40px;
@@ -67,7 +67,7 @@ body {
       cursor: pointer;
       position: absolute;
       top: calc(100% - 32px);
-      left: calc(50% - 32px);
+      right: calc(50% - 32px);
       display: flex;
       justify-content: center;
       align-items: center; }
@@ -78,7 +78,8 @@ body {
     body section#input_section.error div label {
       color: #ff5757; }
     body section#input_section.error div input {
-      border-color: #ff5757; }
+      border-color: #ff5757;
+      caret-color: #ff5757; }
   body section#output_section {
     margin-top: 52px; }
     body section#output_section p {
@@ -88,5 +89,37 @@ body {
       margin-bottom: -23px; }
       body section#output_section p span {
         color: #854cfe; }
+
+@media screen and (min-width: 768px) {
+  body main {
+    max-width: 840px;
+    margin: 171px auto;
+    padding: 56px 56px 60px 56px; }
+    body main section#input_section {
+      gap: 32px;
+      justify-content: flex-start;
+      padding-bottom: 49px; }
+      body main section#input_section div label {
+        font-size: 0.875rem; }
+      body main section#input_section div input {
+        width: 158px;
+        height: 70px;
+        padding: 23px;
+        font-size: 2rem; }
+      body main section#input_section div span.error {
+        width: 158px;
+        height: 21px;
+        font-size: 0.875rem; }
+      body main section#input_section button {
+        width: 96px;
+        height: 96px;
+        top: calc(100% - 48px);
+        right: 0; }
+        body main section#input_section button img {
+          width: 45px; }
+    body main section#output_section {
+      margin-top: 26px; }
+      body main section#output_section p {
+        font-size: 6.5rem; } }
 
 /*# sourceMappingURL=style.css.map */

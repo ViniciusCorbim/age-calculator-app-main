@@ -1,0 +1,54 @@
+@media screen and (min-width: 768px) {
+  body {
+    main {
+      max-width: 840px;
+      margin: 171px auto;
+      padding: 56px 56px 60px 56px;
+
+      section#input_section {
+        gap: 32px;
+        justify-content: flex-start;
+        padding-bottom: 49px;
+
+        div {
+          label {
+            font-size: 0.875rem;
+          }
+
+          input {
+            width: 158px;
+            height: 70px;
+            padding: 23px;
+            font-size: 2rem;
+          }
+
+          span.error {
+            width: 158px;
+            height: 21px;
+            font-size: 0.875rem;
+          }
+        }
+
+        button {
+          width: 96px;
+          height: 96px;
+
+          top: calc(100% - 48px);
+          right: 0;
+
+          img {
+            width: 45px;
+          }
+        }
+      }
+
+      section#output_section {
+        margin-top: 26px;
+
+        p {
+          font-size: 6.5rem;
+        }
+      }
+    }
+  }
+}
