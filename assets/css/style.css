@@ -1,12 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300;1,400;1,800&display=swap");
 * {
   margin: 0;
   padding: 0;
   border: 0;
+  outline: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  transition: all 0.2s; }
 
 body {
   background-color: #f0f0f0;
@@ -23,15 +25,16 @@ body {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); }
   body section#input_section {
     display: flex;
+    justify-content: space-around;
     gap: 15px;
-    padding-bottom: 63px;
+    padding-bottom: 35px;
     border-bottom: #dbdbdb 1px solid;
     position: relative; }
     body section#input_section div {
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
-      gap: 6px; }
+      gap: 6px;
+      font-weight: bold; }
       body section#input_section div label {
         font-size: 12px;
         color: #7e7e7e;
@@ -45,6 +48,16 @@ body {
         font-size: 20px; }
         body section#input_section div input::-webkit-outer-spin-button, body section#input_section div input::-webkit-inner-spin-button {
           -webkit-appearance: none; }
+        body section#input_section div input:focus, body section#input_section div input:hover {
+          border-color: #854cfe;
+          caret-color: #854cfe; }
+      body section#input_section div span.error {
+        width: 87px;
+        height: 40px;
+        color: #ff5757;
+        font-size: 13px;
+        font-weight: 300;
+        font-style: italic; }
     body section#input_section button {
       background-color: #854cfe;
       width: 64px;
@@ -59,6 +72,12 @@ body {
       align-items: center; }
       body section#input_section button img {
         width: 30px; }
+      body section#input_section button:hover {
+        background-color: black; }
+    body section#input_section.error div label {
+      color: #ff5757; }
+    body section#input_section.error div input {
+      border-color: #ff5757; }
   body section#output_section {
     margin-top: 52px; }
     body section#output_section p {

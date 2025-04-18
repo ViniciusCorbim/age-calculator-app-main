@@ -4,10 +4,12 @@
   margin: 0;
   padding: 0;
   border: 0;
+  outline: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
+  transition: all 0.2s;
 }
 
 body {
@@ -28,16 +30,17 @@ body {
 
   section#input_section {
     display: flex;
+    justify-content: space-around;
     gap: 15px;
-    padding-bottom: 63px;
+    padding-bottom: 35px;
     border-bottom: $backgroundColor2 1px solid;
     position: relative;
 
     div {
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
       gap: 6px;
+      font-weight: bold;
 
       label {
         font-size: 12px;
@@ -57,6 +60,22 @@ body {
         &::-webkit-inner-spin-button {
           -webkit-appearance: none;
         }
+
+        &:focus,
+        &:hover {
+          border-color: $color1;
+          caret-color: $color1;
+        }
+      }
+
+      span.error {
+        width: 87px;
+        height: 40px;
+
+        color: $color2;
+        font-size: 13px;
+        font-weight: 300;
+        font-style: italic;
       }
     }
 
@@ -77,6 +96,22 @@ body {
 
       img {
         width: 30px;
+      }
+
+      &:hover {
+        background-color: black;
+      }
+    }
+
+    &.error {
+      div {
+        label {
+          color: $color2;
+        }
+
+        input {
+          border-color: $color2;
+        }
       }
     }
   }
