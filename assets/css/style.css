@@ -26,6 +26,7 @@ body {
   body section#input_section {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     gap: 15px;
     padding-bottom: 35px;
     border-bottom: #dbdbdb 1px solid;
@@ -36,7 +37,7 @@ body {
       gap: 6px;
       font-weight: bold; }
       body section#input_section div label {
-        font-size: 12px;
+        font-size: 0.75rem;
         color: #7e7e7e;
         letter-spacing: 4px;
         text-transform: uppercase; }
@@ -45,7 +46,7 @@ body {
         padding: 15px;
         border: #dbdbdb 1px solid;
         border-radius: 8px;
-        font-size: 20px; }
+        font-size: 1.25rem; }
         body section#input_section div input::-webkit-outer-spin-button, body section#input_section div input::-webkit-inner-spin-button {
           -webkit-appearance: none; }
         body section#input_section div input:focus, body section#input_section div input:hover {
@@ -55,7 +56,7 @@ body {
         width: 87px;
         height: 40px;
         color: #ff5757;
-        font-size: 13px;
+        font-size: 0.813rem;
         font-weight: 300;
         font-style: italic; }
     body section#input_section button {
@@ -81,7 +82,7 @@ body {
   body section#output_section {
     margin-top: 52px; }
     body section#output_section p {
-      font-size: 55px;
+      font-size: 3.438rem;
       font-weight: bolder;
       font-style: italic;
       margin-bottom: -23px; }
