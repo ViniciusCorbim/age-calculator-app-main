@@ -1,9 +1,9 @@
 @media screen and (min-width: 768px) {
   body {
     main {
-      max-width: 840px;
-      margin: 171px auto;
-      padding: 56px 56px 60px 56px;
+      max-width: 700px;
+      margin: 70px auto;
+      padding: 40px 56px 40px 56px;
       border-radius: 20px 20px 25% 20px;
 
       section#input_section {
@@ -44,7 +44,36 @@
       }
 
       section#output_section {
-        margin-top: 26px;
+        margin-top: 15px;
+
+        p {
+          font-size: 4.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    main {
+      max-width: 840px;
+      margin: 154px auto;
+      padding: 56px 56px 60px 56px;
+      box-shadow: none;
+
+      section#input_section {
+        padding-bottom: 20px;
+        div {
+          input {
+            width: 158px;
+            height: 72px;
+          }
+        }
+      }
+
+      section#output_section {
+        margin-top: 24px;
 
         p {
           font-size: 6.5rem;
